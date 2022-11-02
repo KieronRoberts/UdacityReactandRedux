@@ -1,0 +1,23 @@
+/* Leaderboard */
+
+.AvatarColumn, .UserColumn, .ScoreColumn, .UserCount, .QuestionCount {
+    width: 4;
+}
+
+.AnsweredColumn, .CreatedColumn, .AnswerCount, .QuestionCount{
+    width: 12;
+}
+
+.Avatar{
+    vertical-align: middle;
+}
+
+.User{
+    font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.Score{
+    font-size: medium;
+}

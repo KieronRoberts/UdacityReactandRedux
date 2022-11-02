@@ -1,0 +1,21 @@
+.SignIn {
+    font-size: medium;
+    font-family: sans-serif;
+    color: green;
+
+}
+
+.SignInLayout{
+    align-items: center;
+    text-align: center;
+}
+
+.AppTitle{
+    font-size: large;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.login{
+    width: 16;
+}
