@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a716b2bd-1082-43d9-bd17-cd3684d2d7ad/deploy-status)](https://app.netlify.com/sites/reactnd-would-you-rather/deploys)
+[![Edit reactnd-project-would-you-rather](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/james-priest/reactnd-project-would-you-rather/tree/master/?fontsize=14)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Would You Rather
 
-## Available Scripts
+Would You Rather is a fully responsive and mobile-ready polling game that presents the user with a series of questions.
 
-In the project directory, you can run:
+![screenshot #1](docs/assets/images/wyr77-small.jpg)
 
-### `npm start`
+It's built with React, Redux, React Router, & Redux Thunk.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app is the second of three projects required for [Udacity's React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Live Demo:** [https://reactnd-would-you-rather.netlify.com](https://reactnd-would-you-rather.netlify.com/)
+- **Code Notes:** [Step-by-step walk-though of how this project was built](https://james-priest.github.io/reactnd-project-would-you-rather/)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository, change directories, and use NPM to install the dependencies.
 
-### `npm run build`
+```bash
+$ git clone https://github.com/james-priest/reactnd-project-would-you-rather.git
+$ cd reactnd-project-would-you-rather
+$ npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project can be run with
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm start`
 
-### `npm run eject`
+The project can be viewed in the browser at
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![screenshot #2](docs/assets/images/wyr76-small.jpg)

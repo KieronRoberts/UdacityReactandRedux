@@ -1,11 +1,11 @@
 import { getInitialData } from '../utils/api';
-import { receiveQuestion } from '../actions/questions';
+import { receiveQuestions } from '../actions/questions';
 import { receiveUsers } from '../actions/users';
 
 export function handleInitialData() {
   return dispatch => {
-    return getInitialData().then(({ users, rquestion }) => {
-      dispatch(receiveQuestion(rquestion));
+    return getInitialData().then(({ users, questions }) => {
+      dispatch(receiveQuestions(questions));
       dispatch(receiveUsers(users));
     });
   };

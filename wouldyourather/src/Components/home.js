@@ -8,7 +8,6 @@ export class Home extends Component {
   static propTypes = {
     userQuestionData: PropTypes.object.isRequired
   };
-  
   render() {
     const { userQuestionData } = this.props;
 
@@ -24,7 +23,11 @@ const panes = props => {
       render: () => (
         <Tab.Pane>
           {userQuestionData.answered.map(question => (
-            <UserCard key={question.id} question_id={question.id} unanswered={true}/>
+            <UserCard
+              key={question.id}
+              question_id={question.id}
+              unanswered={true}
+            />
           ))}
         </Tab.Pane>
       )
@@ -34,7 +37,11 @@ const panes = props => {
       render: () => (
         <Tab.Pane>
           {userQuestionData.unanswered.map(question => (
-            <UserCard key={question.id} question_id={question.id} unanswered={false}/>
+            <UserCard
+              key={question.id}
+              question_id={question.id}
+              unanswered={false}
+            />
           ))}
         </Tab.Pane>
       )
@@ -42,12 +49,12 @@ const panes = props => {
   ];
 };
 
-function mapStateToProps({ authorisedUser, users, rquestion }) {
-  const answeredIds = Object.keys(users[authorisedUser].answers);
-  const answered = Object.values(rquestion)
+function mapStateToProps({ authUser, users, questions }) {
+  const answeredIds = Object.keys(users[authUser].answers);
+  const answered = Object.values(questions)
     .filter(question => !answeredIds.includes(question.id))
     .sort((a, b) => b.timestamp - a.timestamp);
-  const unanswered = Object.values(rquestion)
+  const unanswered = Object.values(questions)
     .filter(question => answeredIds.includes(question.id))
     .sort((a, b) => b.timestamp - a.timestamp);
 
