@@ -15,8 +15,8 @@ export const colors = {
 
 export const styles = {
   primary: {
-    color: 'green',
-    bgColor: 'honeydew'
+    color: 'blue',
+    bgColor: 'blue'
   },
   secondary: {
     color: 'grey',

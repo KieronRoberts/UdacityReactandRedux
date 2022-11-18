@@ -79,31 +79,39 @@ export class UserCard extends Component {
       return <Redirect to="/questions/bad_id" />;
     }
 
-    //Sets tabcolour
+    //Sets tabcolour equal to unanswered
     const tabColor = unanswered === true ? colors.green : colors.blue;
     const borderTop =
       unanswered === null
         ? `1px solid ${colors.grey}`
         : `2px solid ${tabColor.hex}`;
-
+    //Returns the user card
     return (
       <Segment.Group>
+        {/*Sets header*/}
         <Header
+          //Sets header h5
           as="h5"
+          //Alinestext to the left
           textAlign="left"
           block
+          //Attaches the text to the top of the header
           attached="top"
           style={{ borderTop: borderTop }}
         >
+          {/*Displays "User1 asks:" (User1 being the author of the question)*/}
           {author.name} asks:
         </Header>
-
         <Grid divided padded>
           <Grid.Row>
+            {/*Sets a column with the width of 5*/}
             <Grid.Column width={5}>
+              {/*Sets image to be the authors avatar*/}
               <Image src={author.avatarURL} />
             </Grid.Column>
+            {/*Sets a column with the width of 11*/}
             <Grid.Column width={11}>
+              {/*Sets Poll Content to equal pollType, question and unanswered*/}
               <PollContent
                 pollType={pollType}
                 question={question}
@@ -117,25 +125,33 @@ export class UserCard extends Component {
   }
 }
 
+//Defines mapStateToProps as a function using users, questions, authUser and match, question_id
 function mapStateToProps(
   { users, questions, authUser },
   { match, question_id }
 ) {
+  //Sets question, author, pollType and badPath to equal false
   let question,
     author,
     pollType,
     badPath = false;
+  //If question ID is defined then question is to equal questions[question_id], same for author and pollType
   if (question_id !== undefined) {
     question = questions[question_id];
     author = users[question.author];
     pollType = pollTypes.POLL_TEASER;
   } else {
+    //Defines question_id = match.params
     const { question_id } = match.params;
+    //Sets question to questions(question_id)
     question = questions[question_id];
+    //Defines user as equal to users(authUser)
     const user = users[authUser];
 
+    //If question equals undefined the badpath will be set to true
     if (question === undefined) {
       badPath = true;
+      //Else author will equal the questions author
     } else {
       author = users[question.author];
       pollType = pollTypes.POLL_QUESTION;
@@ -145,6 +161,7 @@ function mapStateToProps(
     }
   }
 
+  //Returns badPath, question, author and pollType
   return {
     badPath,
     question,
@@ -153,4 +170,5 @@ function mapStateToProps(
   };
 }
 
+//Exports UserCard using mapStateToProps
 export default connect(mapStateToProps)(UserCard);
