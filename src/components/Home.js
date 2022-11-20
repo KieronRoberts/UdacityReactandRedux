@@ -38,6 +38,7 @@ const panes = props => {
           {userQuestionData.answered.map(question => (
             //Builds UserCards with key equal to question.id, question_id equal to question.id and unanswered equal to true
             <UserCard
+              background-color="blue"
               key={question.id}
               question_id={question.id}
               unanswered={true}

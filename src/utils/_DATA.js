@@ -31,41 +31,6 @@ let users = {
       '6ni6ok3ym7mf1p33lnez': 'optionTwo'
     },
     questions: ['6ni6ok3ym7mf1p33lnez', 'xj352vofupe1dqz9emx13r']
-  },
-  peter: {
-    id: 'peter',
-    name: 'Peter',
-    avatarURL: '/images/avatars/gorilla.png',
-    answers: {},
-    questions: []
-  },
-  anusha: {
-    id: 'anusha',
-    name: 'Anusha',
-    avatarURL: '/images/avatars/koala.png',
-    answers: {},
-    questions: []
-  },
-  evidence: {
-    id: 'evidence',
-    name: 'Evidence',
-    avatarURL: '/images/avatars/rabbit.png',
-    answers: {},
-    questions: []
-  },
-  meryem: {
-    id: 'meryem',
-    name: 'Meryem',
-    avatarURL: '/images/avatars/tiger.png',
-    answers: {},
-    questions: []
-  },
-  james: {
-    id: 'james',
-    name: 'James',
-    avatarURL: '/images/avatars/fox.png',
-    answers: {},
-    questions: []
   }
 };
 
@@ -102,11 +67,11 @@ let questions = {
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
-      text: 'be telekinetic'
+      text: 'be really tall'
     },
     optionTwo: {
       votes: ['brittini'],
-      text: 'be telepathic'
+      text: 'be really short'
     }
   },
   loxhs1bqm25b708cmbf3g: {

@@ -17,7 +17,7 @@ code {
   padding: 0 6px;
 }
 
-/* home page tab highlight */
+/*Home page tab highlight */
 .tab .ui.tabular.menu .item {
   flex: 1 1 auto;
   background: none #f6f6f6;
@@ -56,9 +56,3 @@ i.compact.icon {
   padding-top: .5em;
   padding-bottom: .5em;
 }
-
-/* @media screen and (max-width: 650px) {
-  html, body {
-    font-size: 16px;
-  }
-} */
