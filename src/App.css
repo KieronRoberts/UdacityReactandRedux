@@ -1,0 +1,53 @@
+body {
+  background-color: #dde0de;
+  color: #dde0de;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.App-header{
+  text-align: center;
+  font-family: monospace;
+  font-size: xx-large;
+  color:#dde0de;
+}
+
+.Header{
+  text-align: center;
+  font-family: monospace;
+  font-size: xx-large;
+  color:#3e442b;
+}
+
+/* NAV BAR*/
+.NavList{
+  text-align: left;
+  font-family: monospace;
+  font-size: large;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 2;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3e442b;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #334125;
+}
