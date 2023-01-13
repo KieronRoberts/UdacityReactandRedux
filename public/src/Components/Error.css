@@ -1,0 +1,12 @@
+.ErrorPageTitle{
+    font-family: monospace;
+    font-size: larger;
+    text-align: left;
+    color: #3e442b;
+
+    padding-left: 25px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+

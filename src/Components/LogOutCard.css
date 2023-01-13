@@ -1,4 +1,4 @@
-.LeaderCard{
+.LogOutCard{
     text-align: center;
     width: 80%;
     margin-left: auto;
@@ -12,7 +12,7 @@
     background-color: #3e442b;
 }
 
-.LeaderCardTitle {
+.LogOutCardTitle {
     font-family: monospace;
     font-size: larger;
     text-align: left;
@@ -24,14 +24,23 @@
     padding-bottom: 0px;
 }
 
-.AnsweredQuestions, .CreatedQuestions, .TotalScore{
+.SubmitButton{
+    width: 100px;
+    height: 500px;
+    height: auto;
     font-family: monospace;
-    font-size: larger;
-    text-align: center;
-    color: #ffffff;
+    font-size: large;
+
+    color:#ffffff;
+    background-color: #45c700;
 
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #3e442b;
 }
