@@ -1,9 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import './LoginCard.css';
-//import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import ErrorPopup from './ErrorPopup';
+
+//import { connect } from 'react-redux';
+//import { setAuthedUser } from '../actions/authedUser';
+
+//Testing Login ->>    
 
 const LoginCard = ({Card}) => {
     const [ButtonPopup, setButtonPopup] = useState(false);
@@ -30,6 +34,18 @@ const LoginCard = ({Card}) => {
         console.log(enteredText);
     };
 
+/*
+    function handleAuthedUser(id) {
+        const { from } = this.props.location.state || {
+            from: { pathname: '/Home' }
+        };
+        this.props.dispatch(setAuthedUser(id));
+        this.props.history.push(from);
+    };
+
+    render() {
+    const { userIds, users } = this.props;
+*/
 
     return(
         <div className='LoginCard'>
@@ -42,8 +58,9 @@ const LoginCard = ({Card}) => {
                 <label className='UserName'>Choose a User</label>
                 <br></br>
                 <select className='UsernameDrop'>
-                    <option value='User1'>User 1</option>
-                    <option value='User2'>User 2</option>
+                    <option id='sarahedo' value='sarahedo'>Sarah Edo</option>
+                    <option id='tylermcginnis' value='tylermcginnis'>Tyler McGinnis</option>
+                    <option id='johndoe' value='johndoe'>John Doe</option>
                 </select>
                 <br></br>
                 <br></br>
@@ -51,21 +68,35 @@ const LoginCard = ({Card}) => {
                     Enter password
                 </label>
                 <br></br>
-                <input onChange={UpdateVarPassword} className='Input' type="password" name="password" required></input>
+                <input onChange={UpdateVarPassword} className="Input" type="password" name="password" required></input>
                 <br></br>
-                        <button className='SubmitButton' onClick={ToggleButton}>
-                            Login
-                        </button>
-
-
-                        <ErrorPopup trigger={ButtonPopup} setTrigger={setButtonPopup}>
-                            <h3> 
-                                Password was entered incorrectly
-                            </h3>
-                        </ErrorPopup>
+                {/*{userIds.map(user => (*/}
+                    <button className='SubmitButton' onClick={ToggleButton}>
+                        {/*() => this.handleAuthedUser(user)}*/}
+                        Login
+                    </button>
+                    {/* ))} */}
+                    <ErrorPopup trigger={ButtonPopup} setTrigger={setButtonPopup}>
+                        <h3> 
+                            Password was entered incorrectly
+                        </h3>
+                    </ErrorPopup>
             </div>
         </div>
     )
 }
 
+/*
+function mapStateToProps({ users }) {
+    return {
+      userIds: Object.keys(users),
+      users
+    };
+}
+*/
+  
 export default LoginCard;
+
+/*
+connect(mapStateToProps)(LoginCard);
+*/

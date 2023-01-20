@@ -1,11 +1,11 @@
 import React from "react";
 import UserCard from "../Components/UserCard";
 
-const HomePage =() => {
+const HomePage =() => {    
     return (
         <div>
             <header className="Header">
-            Would You Rather Application
+                Would You Rather Application
                 <ul id="NavList" className="NavList">
                     <li className="LogOut"><a href="http://localhost:3000/LogOut">&#128274; LogOut</a></li>
                     <li className="Home"><a href="http://localhost:3000/Home">&#127969; Home</a></li>
@@ -18,5 +18,18 @@ const HomePage =() => {
         </div>
     )
 };
+
+/*
+Testing Props ->
+
+function mapStateToProps({ authedUser, users }) {
+    return {
+      authedUser,
+      users
+    };
+  }
+
+export default withRouter(connect(mapStateToProps)(Header));
+*/
 
 export default HomePage

@@ -8,7 +8,7 @@ const LogOutCard = ({Card}) => {
         <div className='LogOutCard'>
             <div className='LogOutCardTitle'>
                 <h3>
-                Log Out Page
+                    Log Out Page
                 </h3>
             </div>
                 <h4>
