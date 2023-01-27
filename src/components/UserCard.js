@@ -22,8 +22,9 @@ const UserCard = ({Card}) => {
                         <label htmlFor="Option2">Option 2</label>
                     </div>
                     <br></br>
-                    <input className='SubmitButton' type="submit" value="Submit">
-                    </input>
+                    <button className='SubmitButton' type="submit">
+                        Submit
+                    </button>
                 </form>
             </div>
         </div>

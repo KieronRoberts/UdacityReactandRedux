@@ -19,7 +19,7 @@ const LogOutCard = ({Card}) => {
                 </h4>
                 <a href='http://localhost:3000/'>
                     <button className='SubmitButton' type="submit">
-                        Log Out
+                        Logout
                     </button>
                 </a>
         </div>

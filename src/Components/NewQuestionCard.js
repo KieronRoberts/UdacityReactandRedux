@@ -19,8 +19,9 @@ const NewQuestionCard = ({Card}) => {
                     <br/>
                     <input className='Input' type="text" id="Wouldyourather" name="Wouldyourather"></input>
                     <br></br>
-                    <input className='SubmitButton' type="submit" value="Submit">
-                    </input>
+                    <button className='SubmitButton' type="submit">
+                        Submit
+                    </button>
                 </form>
             </div>
         </div>
