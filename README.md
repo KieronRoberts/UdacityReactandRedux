@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Would You Rather Application 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository serves as the secondary project for the Udacity React Fundamentals course, providing an avenue for me to apply and solidify the skills I have acquired throughout this Udacity Course.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Author](#author)
+- [Skills Learned](#skills-learned)
+- [Challenges Overcome](#challenges-overcome)
+- [Features](#features)
+- [Run Locally](#run-locally)
+- [Acknowledgements](#acknowledgements)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository contains the program which i built in order to achieve the Udacity React Fundamentals course. This was my first introduction to React and completing this course was very engaging and allowed me to learn a lot. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+"Would You Rather" allows users create, answer and vote on would you rather questions. This project encourages the use of React's component-based architecture, state management, and lifecycle methods to create a responsive and interactive user interface. It emphasises the principles of code modularity, reusability, and maintainability.
 
-### `npm test`
+Throughout this project I had the opportunity to practice key React.js concepts such as creating functional and class components, managing state and props, handling user interactions, and implementing routing for multiple app views.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Although this project is not complete, due to the time constraints, I believe that it is important to show were I was about to get to in this devleopment. Once i have gain move web development skills I would like to return to complete this. 
 
-### `npm run build`
+## Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[@KieronRoberts](https://github.com/KieronRoberts)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I am a Junior Software developer working mainly with Mircosoft PowerPlatforms, this repository is part of a larger portfolio I am developing as part of my personal education whilst transtioning from low-code development.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Skills Learned
 
-### `npm run eject`
+As this project was part of the assements in the [Udacity React Fundaments](https://www.udacity.com/course/react-nanodegree--nd019) I learnt everything I currently know about React whilst completing this project. However through my studies I beleive the key aspects of react that I learnt were: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- State Management: I learnt the importance of state management, how to use props to pass data into components, how to add state to components and how to use useState to update components state.
+- UI + Redux: I learnt how to combine Redux with a user interface.
+- Redux Middleware: I learnt the benefits of middleware with Redux Cycle, how to apply middleware to Redux application.
+- Redux with React: I learnt how to identify when use component state vs Redux state and how to leverage React-Redux bindings to extend app functionality.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Run Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+$ git clone https://github.com/KieronRoberts/UdacityReactandRedux
+$ cd UdacityReactandRedux
+$ npm install
+$ npm run start
+```
 
-## Learn More
+## Acknowledgements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acknowlegements for this project go to:
+ - [Inital Codes](https://github.com/udacity/nd0191-c1-myreads/)
+ - [W3Schools React Tutorial](https://www.w3schools.com/react/default.asp)
+ - [How to write a readme](https://readme.so/editor)
